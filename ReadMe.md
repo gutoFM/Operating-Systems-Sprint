@@ -1,4 +1,4 @@
-# 🧠 Projeto Operating Systems — FIAP 3ESPX
+# Projeto Operating Systems — FIAP 3ESPX
 
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04%20LTS-E95420?style=for-the-badge\&logo=ubuntu\&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/Node.js-18.x-339933?style=for-the-badge\&logo=node.js\&logoColor=white)
@@ -9,7 +9,7 @@
 
 ---
 
-## 👨‍💻 Integrantes
+## Integrantes
 
 | Nome                  | RM      |
 | --------------------- | ------- |
@@ -21,7 +21,7 @@
 
 ---
 
-## 📚 Descrição do Projeto
+## Descrição do Projeto
 
 Projeto desenvolvido para a disciplina **Operating Systems** da **FIAP**, com o objetivo de:
 
@@ -34,7 +34,7 @@ Projeto desenvolvido para a disciplina **Operating Systems** da **FIAP**, com o 
 
 ---
 
-## 🧩 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 /home/gutofm/
@@ -54,9 +54,9 @@ Projeto desenvolvido para a disciplina **Operating Systems** da **FIAP**, com o 
 
 ---
 
-## ⚙️ Etapa 1 — Configuração do Ambiente
+## Etapa 1 — Configuração do Ambiente
 
-### 🖥️ 1. Criação da VM
+### 1. Criação da VM
 
 **VirtualBox (Ubuntu Server 22.04 LTS):**
 
@@ -72,7 +72,7 @@ ip a
 ping -c 3 8.8.8.8
 ```
 
-### 🔑 2. Acesso via SSH
+### 2. Acesso via SSH
 
 ```bash
 sudo apt install -y openssh-server
@@ -88,7 +88,7 @@ ssh usuario@IP_DA_VM
 
 ---
 
-### 🐋 3. Instalação Docker e NGINX
+### 3. Instalação Docker e NGINX
 
 ```bash
 sudo apt update
@@ -117,7 +117,7 @@ http://IP_DA_VM
 
 ---
 
-### 💾 4. Banco de Dados SQLite (Docker)
+### 4. Banco de Dados SQLite (Docker)
 
 ```bash
 mkdir -p ~/sqlite-data
@@ -146,7 +146,7 @@ docker exec -it sqlite sh -c "sqlite3 /data/app.db \"CREATE TABLE IF NOT EXISTS 
 
 ---
 
-### 🧠 5. API Node.js
+### 5. API Node.js
 
 Instalação:
 
@@ -179,7 +179,7 @@ curl http://IP_DA_VM:3000/users
 
 ---
 
-### 🌐 6. NGINX Reverse Proxy
+### 6. NGINX Reverse Proxy
 
 ```bash
 sudo tee /etc/nginx/sites-available/myapp <<'EOF'
@@ -210,9 +210,9 @@ http://IP_DA_VM/users
 
 ---
 
-## 🧩 Etapa 2 — Logs, Usuários e Anonimização
+## Etapa 2 — Logs, Usuários e Anonimização
 
-### 🧾 1. Endpoint de Logs
+### 1. Endpoint de Logs
 
 ```js
 app.post('/logs', (req, res) => {
@@ -238,7 +238,7 @@ sudo tail -n 5 /var/log/xp_access.log
 
 ---
 
-### 🧩 2. Script de Anonimização (com logs)
+### 2. Script de Anonimização (com logs)
 
 `/home/gutofm/app/anonymize_pii.sh`
 
@@ -268,7 +268,7 @@ echo "[INFO] Execução finalizada em $(date '+%Y-%m-%d %H:%M:%S')" >> "$LOG_FIL
 
 ---
 
-### 👥 3. Usuários dedicados
+### 3. Usuários dedicados
 
 ```bash
 sudo adduser loguser
@@ -286,7 +286,7 @@ sudo setfacl -m u:anonymuser:rw /home/gutofm/sqlite-data/app.db
 
 ---
 
-### 🧠 4. Testes Finais
+### 4. Testes Finais
 
 **Rodar a API como `loguser`:**
 
@@ -312,7 +312,7 @@ sudo tail -n 5 /var/log/xp_anonymize.log
 
 ---
 
-## 🎬 Demonstração (Vídeo Pitch)
+## Demonstração (Vídeo Pitch)
 
 **Duração:** até 6 minutos
 
@@ -326,7 +326,7 @@ sudo tail -n 5 /var/log/xp_anonymize.log
 
 ---
 
-## ✅ Conclusão
+## Conclusão
 
 O projeto entrega:
 
@@ -339,5 +339,5 @@ O projeto entrega:
 
 ---
 
-📍 **Disciplina:** Operating Systems — FIAP 3ESPX (2025)
-📦 **Versão:** 2.0 — Final
+**Disciplina:** Operating Systems — FIAP 3ESPX (2025)
+**Versão:** 2.0 — Final
