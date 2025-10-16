@@ -1,11 +1,12 @@
 # Projeto Operating Systems — FIAP 3ESPX
 
-![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04%20LTS-E95420?style=for-the-badge\&logo=ubuntu\&logoColor=white)
-![NodeJS](https://img.shields.io/badge/Node.js-18.x-339933?style=for-the-badge\&logo=node.js\&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-3-blue?style=for-the-badge\&logo=sqlite\&logoColor=white)
-![NGINX](https://img.shields.io/badge/NGINX-Reverse%20Proxy-009639?style=for-the-badge\&logo=nginx\&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge\&logo=docker\&logoColor=white)
-![License](https://img.shields.io/badge/License-FIAP-lightgrey?style=for-the-badge)
+Tecnologias usadas
+| ![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04%20LTS-E95420?style=for-the-badge\&logo=ubuntu\&logoColor=white) | 
+| ![NodeJS](https://img.shields.io/badge/Node.js-18.x-339933?style=for-the-badge\&logo=node.js\&logoColor=white) | 
+| ![SQLite](https://img.shields.io/badge/SQLite-3-blue?style=for-the-badge\&logo=sqlite\&logoColor=white) | 
+| ![NGINX](https://img.shields.io/badge/NGINX-Reverse%20Proxy-009639?style=for-the-badge\&logo=nginx\&logoColor=white) | 
+| ![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge\&logo=docker\&logoColor=white) | 
+| ![License](https://img.shields.io/badge/License-FIAP-lightgrey?style=for-the-badge) | 
 
 ---
 
